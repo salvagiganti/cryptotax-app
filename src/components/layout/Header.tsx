@@ -3,6 +3,7 @@
 import * as React from "react";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 
 export type HeaderLink = {
   label: string;
@@ -50,7 +51,7 @@ export function Header({ className, links }: HeaderProps) {
 
           {/* Desktop Nav */}
           <nav className="hidden md:flex md:items-center md:gap-6" aria-label="Main">
-            {navLinks.map((item) => (
+            {navLinks.slice(0, -1).map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
@@ -59,6 +60,17 @@ export function Header({ className, links }: HeaderProps) {
                 {item.label}
               </Link>
             ))}
+            
+            {/* Language Switcher */}
+            <LanguageSwitcher />
+            
+            {/* Login Button */}
+            <Link
+              href={navLinks[navLinks.length - 1].href}
+              className="rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            >
+              {navLinks[navLinks.length - 1].label}
+            </Link>
           </nav>
 
           {/* Mobile Toggle */}
@@ -108,7 +120,7 @@ export function Header({ className, links }: HeaderProps) {
         )}
       >
         <nav aria-label="Mobile" className="space-y-1 border-t border-border px-4 py-3">
-          {navLinks.map((item) => (
+          {navLinks.slice(0, -1).map((item) => (
             <Link
               key={item.href}
               href={item.href}
@@ -118,6 +130,20 @@ export function Header({ className, links }: HeaderProps) {
               {item.label}
             </Link>
           ))}
+          
+          {/* Mobile Language Switcher */}
+          <div className="px-3 py-2">
+            <LanguageSwitcher />
+          </div>
+          
+          {/* Mobile Login Button */}
+          <Link
+            href={navLinks[navLinks.length - 1].href}
+            className="block rounded-md bg-primary px-3 py-2 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            onClick={() => setMobileOpen(false)}
+          >
+            {navLinks[navLinks.length - 1].label}
+          </Link>
         </nav>
       </div>
     </header>

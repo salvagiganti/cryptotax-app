@@ -1,0 +1,256 @@
+{
+  "home": {
+    "hero": {
+      "badge": "Vertraut von 10.000+ Krypto-Investoren",
+      "title": "Berechne Deine Krypto-Steuern",
+      "subtitle": "Automatische Steuerberichte für Bitcoin, Ethereum und alle wichtigen Kryptowährungen. Einfach, genau, gesetzeskonform.",
+      "supported": "Unterstützte Kryptowährungen (100+)",
+      "cta": {
+        "start": "Berechnung starten",
+        "demo": "Demo ansehen"
+      },
+      "stats": {
+        "users": "Aktive Nutzer",
+        "taxes": "Berechnete Steuern",
+        "exchanges": "Unterstützte Börsen"
+      }
+    },
+    "features": {
+      "heading": "Warum 10.000+ Trader CryptoTax vertrauen",
+      "subheading": "Professionelle Steuerberechnung für alle Krypto-Trader. Automatisch, präzise, gesetzeskonform.",
+      
+      "ai": {
+        "title": "KI-gestützte Automatisierung",
+        "description": "Schluss mit Excel-Chaos! Unsere KI-Engine analysiert automatisch alle deine Krypto-Transaktionen und berechnet präzise nach FIFO, LIFO oder individuell gewählter Methode. Unterstützt werden alle Transaktionsarten: Trades, Staking, Mining, Airdrops, DeFi, NFTs und mehr. Vollständig konform mit §23 EStG und den aktuellen BMF-Richtlinien.",
+        "bullet1": "FIFO, LIFO, HIFO & individuelle Methoden",
+        "bullet2": "Staking, Mining, DeFi, NFT Support",
+        "bullet3": "§23 EStG konform & BMF-Richtlinien"
+      },
+      
+      "exchanges": {
+        "title": "100+ Exchanges & Wallets",
+        "description": "Verbinde nahtlos über 100 Krypto-Börsen und Wallets - von Binance, Coinbase, Kraken bis hin zu DeFi-Protokollen wie Uniswap und Aave. Automatischer CSV-Import, API-Integration oder manuelle Eingabe - du entscheidest. Unsere intelligente Duplikat-Erkennung sorgt dafür, dass jede Transaktion nur einmal gezählt wird.",
+        "bullet1": "Binance, Coinbase, Kraken & 97 weitere",
+        "bullet2": "DeFi-Protokolle (Uniswap, Aave, etc.)",
+        "bullet3": "Intelligente Duplikat-Erkennung"
+      },
+      
+      "security": {
+        "title": "Bank-Level Security",
+        "description": "Wir nehmen Datenschutz ernst. Ende-zu-Ende-Verschlüsselung nach Bank-Standard (AES-256), Zero-Knowledge-Architektur und Server-Standort Deutschland (DSGVO-konform). Wir speichern keine API-Keys, alle sensiblen Daten werden clientseitig verarbeitet. Regelmäßige Security-Audits durch unabhängige Experten.",
+        "bullet1": "AES-256 Verschlüsselung & Zero-Knowledge",
+        "bullet2": "Server in Deutschland (DSGVO-konform)",
+        "bullet3": "TÜV-zertifiziert & ISO 27001"
+      },
+      
+      "reports": {
+        "title": "Finanzamt-konforme Reports",
+        "description": "Generiere in Sekunden steuerlich anerkannte Berichte im PDF- oder Excel-Format. Unsere Reports entsprechen exakt den Anforderungen deutscher Finanzämter und beinhalten alle notwendigen Angaben: Anschaffungszeitpunkt, Anschaffungskosten, Veräußerungszeitpunkt, Erlös und Gewinn/Verlust. Elster-Export für direkte Übertragung.",
+        "bullet1": "PDF & Excel Export für's Finanzamt",
+        "bullet2": "Alle gesetzlich erforderlichen Angaben",
+        "bullet3": "Elster-Export für direkte Übertragung"
+      },
+      
+      "realtime": {
+        "title": "Real-Time Updates",
+        "description": "Synchronisiere deine Portfolios in Echtzeit über API-Verbindungen. Neue Transaktionen werden automatisch importiert und verarbeitet. Live-Dashboard zeigt dir jederzeit deinen aktuellen Steuer-Status: Unrealisierte Gewinne, Haltefristen, optimale Verkaufszeitpunkte. Smart Alerts warnen dich vor steuerlich ungünstigen Trades.",
+        "bullet1": "Live-Sync mit deinen Exchanges",
+        "bullet2": "Unrealisierte Gewinne & Haltefristen",
+        "bullet3": "Smart Alerts für Tax-Optimization"
+      },
+      
+      "multiyear": {
+        "title": "Multi-Year & Multi-Currency",
+        "description": "Verwalte unbegrenzt viele Steuerjahre in einem Tool. Automatische Überträge von Beständen, korrekte Behandlung von Carry-Forward-Losses. Unterstützt 150+ Fiat-Währungen und automatische Umrechnung zum historischen Wechselkurs. Perfekt für internationale Trader: Multi-Jurisdiktion-Support mit länderspezifischen Steuerregeln.",
+        "bullet1": "Unbegrenzte Steuerjahre & Carry-Forwards",
+        "bullet2": "150+ Fiat-Währungen automatisch",
+        "bullet3": "Multi-Country Support (DE, AT, CH, US...)"
+      }
+    }
+  },
+  "common": {
+    "welcome": "Willkommen bei CryptoTax",
+    "description": "Automatische Berechnung und Erstellung deutscher Krypto-Steuerberichte",
+    "login": "Anmelden",
+    "signup": "Registrieren",
+    "dashboard": "Dashboard",
+    "transactions": "Transaktionen",
+    "reports": "Berichte",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "loading": "Lädt...",
+    "error": "Fehler",
+    "success": "Erfolg"
+  },
+  "navigation": {
+    "home": "Startseite",
+    "features": "Funktionen",
+    "pricing": "Preise",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "login": "Anmelden",
+    "signup": "Registrieren"
+  },
+  "auth": {
+    "email": "E-Mail",
+    "password": "Passwort",
+    "confirmPassword": "Passwort bestätigen",
+    "forgotPassword": "Passwort vergessen?",
+    "loginSuccess": "Erfolgreich angemeldet",
+    "signupSuccess": "Registrierung erfolgreich",
+    "invalidCredentials": "Ungültige Anmeldedaten",
+    "emailRequired": "E-Mail ist erforderlich",
+    "passwordRequired": "Passwort ist erforderlich"
+  },
+  "dashboard": {
+    "welcome": "Willkommen zurück",
+    "totalTransactions": "Transaktionen gesamt",
+    "totalValue": "Gesamtwert",
+    "taxReports": "Steuerberichte",
+    "quickStats": "Schnellstatistiken"
+  },
+  "transactions": {
+    "addTransaction": "Transaktion hinzufügen",
+    "transactionType": "Transaktionstyp",
+    "asset": "Asset",
+    "amount": "Betrag",
+    "price": "Preis",
+    "date": "Datum",
+    "description": "Beschreibung",
+    "buy": "Kaufen",
+    "sell": "Verkaufen",
+    "swap": "Tauschen",
+    "transfer": "Übertragen",
+    "emptyState": "Keine Transaktionen vorhanden",
+    "emptyDescription": "Fügen Sie Ihre erste Transaktion hinzu, um loszulegen."
+  },
+  "reports": {
+    "generateReport": "Bericht erstellen",
+    "reportType": "Berichtstyp",
+    "year": "Jahr",
+    "status": "Status",
+    "generated": "Generiert",
+    "processing": "Verarbeitung",
+    "ready": "Bereit",
+    "error": "Fehler",
+    "download": "Herunterladen",
+    "emptyState": "Keine Berichte vorhanden",
+    "emptyDescription": "Erstellen Sie Ihren ersten Steuerbericht."
+  },
+  "settings": {
+    "profile": "Profil",
+    "taxSettings": "Steuereinstellungen",
+    "exchanges": "Börsen",
+    "wallets": "Wallets",
+    "data": "Daten",
+    "firstName": "Vorname",
+    "lastName": "Nachname",
+    "country": "Land",
+    "taxMethod": "Steuermethode",
+    "fifo": "FIFO (First In, First Out)",
+    "lifo": "LIFO (Last In, First Out)",
+    "average": "Durchschnittskosten"
+  },
+      "pricing": {
+        "title": "Kostenlose Software. Bezahle für Reports.",
+        "subtitle": "Nutze alle Features kostenlos. Zahle nur, wenn du einen offiziellen Steuerbericht benötigst.",
+        
+        "freeSoftware": {
+          "title": "Software ist 100% Kostenlos",
+          "description": "Importiere Transaktionen, berechne Steuern, teste alle Features - komplett kostenlos. Keine Kreditkarte erforderlich."
+        },
+        
+        "reportsTitle": "Offizielle Steuerberichte",
+        "mostPopular": "Beliebteste",
+        "perReport": "/Bericht",
+        
+        "cta": {
+          "button": "Jetzt ausprobieren",
+          "subtext": "Zahle nur, wenn du einen Report benötigst"
+        },
+        
+        "basic": {
+          "name": "Basic Report",
+          "description": "Essenzieller Steuerbericht",
+          "features": [
+            "PDF Export",
+            "Alle Steuermethoden",
+            "Bis zu 1.000 Transaktionen",
+            "E-Mail Zustellung",
+            "Basis Support"
+          ]
+        },
+        
+        "pro": {
+          "name": "Pro Report",
+          "description": "Erweiterte Berichterstattung",
+          "features": [
+            "Alles aus Basic",
+            "Unbegrenzte Transaktionen",
+            "Steuerberater-Sharing",
+            "CSV + Excel Export",
+            "Prioritäts-Support",
+            "Verlustvorträge"
+          ]
+        },
+        
+        "premium": {
+          "name": "Premium Report",
+          "description": "Komplettlösung",
+          "features": [
+            "Alles aus Pro",
+            "Mehrjahresberichte",
+            "DeFi Transaktionen",
+            "NFT Tracking",
+            "Staking & Mining",
+            "Steueroptimierung",
+            "Prüfungsunterstützung"
+          ]
+        },
+        
+        "enterprise": {
+          "badge": "Für Steuerberater & Kanzleien",
+          "title": "Enterprise Plan",
+          "perYear": "/Jahr",
+          "description": "Unbegrenzte Berichte für alle deine Mandanten. Entwickelt für Steuerprofis mit mehreren Klienten.",
+          "contactSales": "Vertrieb kontaktieren",
+          "features": {
+            "unlimitedReports": {
+              "title": "Unbegrenzte Berichte",
+              "description": "Alle Berichtstypen inklusive"
+            },
+            "whiteLabel": {
+              "title": "White-Label",
+              "description": "Dein Firmen-Branding"
+            },
+            "apiAccess": {
+              "title": "API Zugang",
+              "description": "Vollständige API-Integration"
+            },
+            "bulkProcessing": {
+              "title": "Bulk-Verarbeitung",
+              "description": "Mehrere Klienten gleichzeitig"
+            },
+            "dedicatedSupport": {
+              "title": "Dedizierter Support",
+              "description": "Persönlicher Account Manager"
+            },
+            "clientManagement": {
+              "title": "Klienten-Verwaltung",
+              "description": "Zentralisiertes Dashboard"
+            }
+          }
+        },
+        
+        "trust": {
+          "taxCompliant": "Deutsche Steuerkonformität",
+          "bankSecurity": "Bank-Level Verschlüsselung",
+          "moneyBack": "Geld-zurück-Garantie"
+        }
+      }
+}

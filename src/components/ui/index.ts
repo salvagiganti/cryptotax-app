@@ -14,3 +14,4 @@ export * from "./form";
 export * from "./alert";
 export * from "./separator";
 export * from "./sonner";
+export * from "./language-switcher";
