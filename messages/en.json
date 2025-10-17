@@ -66,8 +66,94 @@
         "bullet2": "150+ fiat currencies automatically",
         "bullet3": "Multi-country support (DE, AT, CH, US...)"
       }
+    },
+    
+    "legal": {
+      "impressum": {
+        "title": "Legal Notice",
+        "description": "Legal information about CryptoTax",
+        "company": {
+          "title": "Information according to § 5 TMG",
+          "name": "CryptoTax GmbH",
+          "street": "Sample Street 123",
+          "city": "10115 Berlin",
+          "country": "Germany"
+        },
+        "contact": {
+          "title": "Contact",
+          "email": "Email",
+          "phone": "Phone"
+        },
+        "legal": {
+          "title": "Register Entry",
+          "ceo": "Represented by",
+          "register": "Registration number",
+          "court": "Register court",
+          "vat": "VAT ID"
+        },
+        "disclaimer": {
+          "title": "Disclaimer",
+          "content": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+        }
+      },
+      "privacy": {
+        "title": "Privacy Policy",
+        "description": "Privacy information for CryptoTax",
+        "intro": {
+          "title": "1. Privacy at a Glance",
+          "content": "The protection of your personal data is very important to us. We process your data exclusively on the basis of legal provisions (GDPR, TKG 2003). In this privacy policy, we inform you about the most important aspects of data processing."
+        },
+        "responsible": {
+          "title": "2. Responsible Party"
+        },
+        "dataCollection": {
+          "title": "3. What Data Do We Collect?",
+          "intro": "We collect the following types of data:",
+          "items": {
+            "personal": "Personal data (name, email, address) during registration",
+            "transactions": "Crypto transaction data for tax calculations",
+            "technical": "Technical data (IP address, browser, device)",
+            "usage": "Usage data (visited pages, clicks)"
+          }
+        },
+        "dataUsage": {
+          "title": "4. How Do We Use Your Data?",
+          "intro": "Your data is used exclusively for the following purposes:",
+          "items": {
+            "service": "Provision of our services",
+            "reports": "Creation of your tax reports",
+            "support": "Customer service and support",
+            "improvement": "Improvement of our services"
+          }
+        },
+        "security": {
+          "title": "5. Data Security",
+          "content": "We use state-of-the-art security measures to protect your data: SSL/TLS encryption, AES-256 encryption, regular security audits, server location in Germany (GDPR compliant), no sharing with third parties without your consent."
+        },
+        "rights": {
+          "title": "6. Your Rights",
+          "items": {
+            "access": "Right to information about your stored data",
+            "correction": "Right to correction of incorrect data",
+            "deletion": "Right to deletion of your data",
+            "restriction": "Right to restriction of processing",
+            "portability": "Right to data portability",
+            "objection": "Right to object to processing"
+          }
+        },
+        "cookies": {
+          "title": "7. Cookies",
+          "content": "Our website uses cookies to improve user experience. You can disable the use of cookies in your browser settings at any time."
+        },
+        "changes": {
+          "title": "8. Changes to this Privacy Policy",
+          "content": "We reserve the right to adapt this privacy policy to reflect changes in the legal situation or changes to our services."
+        },
+        "lastUpdated": "Last updated"
+      }
     }
   },
+  
   "common": {
     "welcome": "Welcome to CryptoTax",
     "description": "Automatic calculation and generation of German crypto tax reports",

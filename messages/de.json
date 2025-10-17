@@ -66,8 +66,94 @@
         "bullet2": "150+ Fiat-Währungen automatisch",
         "bullet3": "Multi-Country Support (DE, AT, CH, US...)"
       }
+    },
+    
+    "legal": {
+      "impressum": {
+        "title": "Impressum",
+        "description": "Rechtliche Informationen über CryptoTax",
+        "company": {
+          "title": "Angaben gemäß § 5 TMG",
+          "name": "CryptoTax GmbH",
+          "street": "Musterstraße 123",
+          "city": "10115 Berlin",
+          "country": "Deutschland"
+        },
+        "contact": {
+          "title": "Kontakt",
+          "email": "E-Mail",
+          "phone": "Telefon"
+        },
+        "legal": {
+          "title": "Registereintrag",
+          "ceo": "Vertreten durch",
+          "register": "Registernummer",
+          "court": "Registergericht",
+          "vat": "Umsatzsteuer-ID"
+        },
+        "disclaimer": {
+          "title": "Haftungsausschluss",
+          "content": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+        }
+      },
+      "privacy": {
+        "title": "Datenschutzerklärung",
+        "description": "Informationen zum Datenschutz bei CryptoTax",
+        "intro": {
+          "title": "1. Datenschutz auf einen Blick",
+          "content": "Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten Ihre Daten ausschließlich auf Grundlage der gesetzlichen Bestimmungen (DSGVO, TKG 2003). In dieser Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung."
+        },
+        "responsible": {
+          "title": "2. Verantwortliche Stelle"
+        },
+        "dataCollection": {
+          "title": "3. Welche Daten werden erfasst?",
+          "intro": "Wir erfassen folgende Datenarten:",
+          "items": {
+            "personal": "Persönliche Daten (Name, E-Mail, Adresse) bei Registrierung",
+            "transactions": "Krypto-Transaktionsdaten für Steuerberechnungen",
+            "technical": "Technische Daten (IP-Adresse, Browser, Gerät)",
+            "usage": "Nutzungsdaten (Besuchte Seiten, Klicks)"
+          }
+        },
+        "dataUsage": {
+          "title": "4. Wofür nutzen wir Ihre Daten?",
+          "intro": "Ihre Daten werden ausschließlich für folgende Zwecke verwendet:",
+          "items": {
+            "service": "Bereitstellung unserer Dienstleistungen",
+            "reports": "Erstellung Ihrer Steuerberichte",
+            "support": "Kundenservice und Support",
+            "improvement": "Verbesserung unserer Services"
+          }
+        },
+        "security": {
+          "title": "5. Datensicherheit",
+          "content": "Wir verwenden modernste Sicherheitsmaßnahmen zum Schutz Ihrer Daten: SSL/TLS-Verschlüsselung, AES-256 Verschlüsselung, regelmäßige Sicherheitsaudits, Server-Standort in Deutschland (DSGVO-konform), keine Weitergabe an Dritte ohne Ihre Zustimmung."
+        },
+        "rights": {
+          "title": "6. Ihre Rechte",
+          "items": {
+            "access": "Recht auf Auskunft über Ihre gespeicherten Daten",
+            "correction": "Recht auf Berichtigung unrichtiger Daten",
+            "deletion": "Recht auf Löschung Ihrer Daten",
+            "restriction": "Recht auf Einschränkung der Verarbeitung",
+            "portability": "Recht auf Datenübertragbarkeit",
+            "objection": "Widerspruchsrecht gegen die Verarbeitung"
+          }
+        },
+        "cookies": {
+          "title": "7. Cookies",
+          "content": "Unsere Website verwendet Cookies, um die Benutzerfreundlichkeit zu verbessern. Sie können die Verwendung von Cookies in Ihren Browser-Einstellungen jederzeit deaktivieren."
+        },
+        "changes": {
+          "title": "8. Änderungen dieser Datenschutzerklärung",
+          "content": "Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder Änderungen unserer Dienstleistungen anzupassen."
+        },
+        "lastUpdated": "Stand"
+      }
     }
   },
+  
   "common": {
     "welcome": "Willkommen bei CryptoTax",
     "description": "Automatische Berechnung und Erstellung deutscher Krypto-Steuerberichte",

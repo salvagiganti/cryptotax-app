@@ -12,18 +12,18 @@ export interface FooterProps {
 }
 
 const defaultProduct: FooterLink[] = [
-  { label: "Features", href: "/features" },
-  { label: "Pricing", href: "/pricing" },
+  { label: "Features", href: "/#features" },
+  { label: "Pricing", href: "/#pricing" },
 ];
 
 const defaultLegal: FooterLink[] = [
-  { label: "Privacy", href: "/privacy" },
-  { label: "Terms", href: "/terms" },
+  { label: "Impressum", href: "/impressum" },
+  { label: "Datenschutz", href: "/datenschutz" },
 ];
 
 const defaultSupport: FooterLink[] = [
-  { label: "Contact", href: "/contact" },
-  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/#faq" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Footer({
