@@ -53,7 +53,7 @@ export default function Navigation() {
               {t('features')}
             </button>
             <Link 
-              href="/pricing" 
+              href="/#pricing" 
               className={`text-sm font-medium transition-colors hover:text-primary ${
                 isActive('/pricing') ? 'text-primary' : 'text-muted-foreground'
               }`}
