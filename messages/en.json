@@ -157,30 +157,45 @@
     "average": "Average Cost"
   },
   "pricing": {
-    "title": "Free Software. Pay for Reports.",
-    "subtitle": "Use all features for free. Only pay when you need an official tax report.",
+    "title": "Official Tax Reports",
+    "subtitle": "Test for free, pay only for the report you need",
     
-    "freeSoftware": {
-      "title": "Software is 100% Free",
-      "description": "Import transactions, calculate taxes, test all features - completely free. No credit card required."
+    "free": {
+      "name": "Free",
+      "price": "0",
+      "period": "forever",
+      "description": "Test the software completely free",
+      "cta": "Start for free",
+      "features": [
+        "Software completely free",
+        "Import unlimited transactions",
+        "Use dashboard & charts",
+        "First 10 transactions visible",
+        "Top 3 coins details",
+        "Gross profit/loss visible",
+        "Basic email support"
+      ],
+      "limitations": [
+        "Net tax liability hidden",
+        "No report download",
+        "No DeFi/NFT details"
+      ]
     },
     
     "reportsTitle": "Official Tax Reports",
-    "mostPopular": "Most Popular",
-    "perReport": "/report",
-    
-    "cta": {
-      "button": "Try it now",
-      "subtext": "Pay only when you need a report"
-    },
     
     "basic": {
       "name": "Basic Report",
+      "price": "29",
+      "period": "per report",
       "description": "Essential tax report",
+      "cta": "Try now",
       "features": [
+        "Simple tax report",
         "PDF export",
-        "All tax methods",
-        "Up to 1,000 transactions",
+        "Up to 250 transactions",
+        "All tax methods (FIFO, LIFO, etc.)",
+        "Complete profit/loss calculation",
         "Email delivery",
         "Basic support"
       ]
@@ -188,69 +203,109 @@
     
     "pro": {
       "name": "Pro Report",
+      "price": "79",
+      "period": "per report",
       "description": "Advanced reporting",
+      "badge": "Most Popular",
+      "cta": "Buy now",
       "features": [
-        "Everything in Basic",
+        "Everything from Basic",
         "Unlimited transactions",
+        "DeFi transactions",
+        "Staking & Mining rewards",
+        "NFT tracking",
         "Tax advisor sharing",
         "CSV + Excel export",
-        "Priority support",
-        "Loss carryforward"
-      ]
-    },
-    
-    "premium": {
-      "name": "Premium Report",
-      "description": "Complete solution",
-      "features": [
-        "Everything in Pro",
-        "Multi-year reports",
-        "DeFi transactions",
-        "NFT tracking",
-        "Staking & mining",
-        "Tax optimization",
-        "Audit support"
+        "Priority support (48h)",
+        "Loss carryforwards"
       ]
     },
     
     "enterprise": {
-      "badge": "For Tax Advisors & Firms",
-      "title": "Enterprise Plan",
-      "perYear": "/year",
-      "description": "Unlimited reports for all your clients. Built for tax professionals serving multiple clients.",
-      "contactSales": "Contact Sales",
-      "features": {
-        "unlimitedReports": {
+      "badge": "FOR TAX ADVISORS & FIRMS",
+      "name": "Enterprise Plan",
+      "price": "1,499",
+      "period": "per year",
+      "description": "Unlimited reports for all your clients",
+      "cta": "Contact sales",
+      "features": [
+        {
           "title": "Unlimited Reports",
           "description": "All report types included"
         },
-        "whiteLabel": {
+        {
           "title": "White-Label",
           "description": "Your company branding"
         },
-        "apiAccess": {
+        {
           "title": "API Access",
           "description": "Full API integration"
         },
-        "bulkProcessing": {
+        {
           "title": "Bulk Processing",
-          "description": "Handle multiple clients"
+          "description": "Multiple clients simultaneously"
         },
-        "dedicatedSupport": {
-          "title": "Dedicated Support",
-          "description": "Personal account manager"
-        },
-        "clientManagement": {
+        {
           "title": "Client Management",
           "description": "Centralized dashboard"
+        },
+        {
+          "title": "Dedicated Support",
+          "description": "Priority email support"
         }
-      }
+      ]
     },
     
-    "trust": {
-      "taxCompliant": "German tax compliant",
-      "bankSecurity": "Bank-level encryption",
-      "moneyBack": "Money-back guarantee"
+    "cta": {
+      "button": "Start for free now",
+      "subtext": "Pay only when you need a report"
     }
-  }
+  },
+  
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Everything you need to know about crypto taxes",
+        "items": [
+          {
+            "question": "Which exchanges and wallets are supported?",
+            "answer": "We support over 20+ leading crypto exchanges, including Binance, Coinbase, Kraken, Bitpanda, Bitstamp and many more. Additionally, you can connect wallets like Ledger, MetaMask and Trust Wallet. CSV import from any platform possible."
+          },
+          {
+            "question": "Is CryptoTax compliant with German tax law?",
+            "answer": "Yes, CryptoTax was specifically developed for German tax law. We use the FIFO method (First-In-First-Out) and consider the 1-year holding period for private sales transactions according to § 23 EStG."
+          },
+          {
+            "question": "How does the tax report work?",
+            "answer": "1) Import your transactions from exchanges/wallets, 2) CryptoTax automatically calculates gains, losses and holding periods, 3) Generate your official PDF report for the tax office. The complete process takes just a few minutes."
+          },
+          {
+            "question": "What happens to my data?",
+            "answer": "Your data is protected by bank-level encryption (AES-256) and stored on German servers (GDPR compliant). We don't sell data and don't share it with third parties. You can export or delete your data at any time."
+          },
+          {
+            "question": "Are DeFi, Staking and NFTs supported?",
+            "answer": "Yes! The Pro Report supports DeFi transactions (Uniswap, Aave, etc.), staking rewards, liquidity mining, NFT purchases/sales and mining. All earnings are correctly recorded for tax purposes and documented in the report."
+          },
+          {
+            "question": "Can I give the report to my tax advisor?",
+            "answer": "Absolutely! The report is specially formatted for tax advisors and contains all necessary details: transaction list, profit/loss calculation, holding periods and tax assessment. Many tax advisors already work with CryptoTax. With the Pro Report, you can also share access directly with your tax advisor."
+          },
+          {
+            "question": "Can I create reports for previous years?",
+            "answer": "Yes, you can create reports for all tax years from 2022 onwards. The Pro Report even supports loss carryforwards over multiple tax years - important for your tax optimization and carrying forward losses."
+          },
+          {
+            "question": "Is the software really free?",
+            "answer": "You can use the software for free with limited features: import transactions, view tax calculations and test the platform. For the official, legally secure PDF tax report for the tax office, you pay once per report: Basic Report €29 (up to 250 transactions) or Pro Report €79 (unlimited transactions + advanced features like DeFi, NFTs, Staking)."
+          },
+          {
+            "question": "What's the difference between Basic and Pro Report?",
+            "answer": "Basic Report (€29): Up to 250 transactions, simple tax report, PDF export, all tax methods.\n\nPro Report (€79): Unlimited transactions, DeFi & NFT support, staking rewards, tax advisor sharing, CSV/Excel export, loss carryforwards, priority support."
+          },
+          {
+            "question": "Is there an Enterprise plan for tax advisors?",
+            "answer": "Yes! For €1,499/year you get: Unlimited reports for all clients, white-label branding, full API integration, bulk processing, centralized client dashboard and dedicated support. Contact our sales team for details."
+          }
+        ]
+      }
 }

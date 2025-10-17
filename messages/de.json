@@ -157,30 +157,45 @@
     "average": "Durchschnittskosten"
   },
       "pricing": {
-        "title": "Kostenlose Software. Bezahle für Reports.",
-        "subtitle": "Nutze alle Features kostenlos. Zahle nur, wenn du einen offiziellen Steuerbericht benötigst.",
+        "title": "Offizielle Steuerberichte",
+        "subtitle": "Teste kostenlos, zahle nur für den Report den du brauchst",
         
-        "freeSoftware": {
-          "title": "Software ist 100% Kostenlos",
-          "description": "Importiere Transaktionen, berechne Steuern, teste alle Features - komplett kostenlos. Keine Kreditkarte erforderlich."
+        "free": {
+          "name": "Kostenlos",
+          "price": "0",
+          "period": "für immer",
+          "description": "Teste die Software komplett kostenlos",
+          "cta": "Jetzt kostenlos starten",
+          "features": [
+            "Software komplett kostenlos",
+            "Unbegrenzte Transaktionen importieren",
+            "Dashboard & Charts nutzen",
+            "Erste 10 Transaktionen sichtbar",
+            "Top 3 Coins Details",
+            "Brutto-Gewinn/Verlust sichtbar",
+            "Basis E-Mail Support"
+          ],
+          "limitations": [
+            "Netto-Steuerlast verborgen",
+            "Kein Report-Download",
+            "Keine DeFi/NFT Details"
+          ]
         },
         
         "reportsTitle": "Offizielle Steuerberichte",
-        "mostPopular": "Beliebteste",
-        "perReport": "/Bericht",
-        
-        "cta": {
-          "button": "Jetzt ausprobieren",
-          "subtext": "Zahle nur, wenn du einen Report benötigst"
-        },
         
         "basic": {
           "name": "Basic Report",
+          "price": "29",
+          "period": "pro Bericht",
           "description": "Essenzieller Steuerbericht",
+          "cta": "Jetzt ausprobieren",
           "features": [
+            "Einfacher Steuerbericht",
             "PDF Export",
-            "Alle Steuermethoden",
-            "Bis zu 1.000 Transaktionen",
+            "Bis zu 250 Transaktionen",
+            "Alle Steuermethoden (FIFO, LIFO, etc.)",
+            "Vollständige Gewinn/Verlust Berechnung",
             "E-Mail Zustellung",
             "Basis Support"
           ]
@@ -188,69 +203,109 @@
         
         "pro": {
           "name": "Pro Report",
+          "price": "79",
+          "period": "pro Bericht",
           "description": "Erweiterte Berichterstattung",
+          "badge": "Beliebteste",
+          "cta": "Jetzt kaufen",
           "features": [
             "Alles aus Basic",
             "Unbegrenzte Transaktionen",
+            "DeFi Transaktionen",
+            "Staking & Mining Rewards",
+            "NFT Tracking",
             "Steuerberater-Sharing",
             "CSV + Excel Export",
-            "Prioritäts-Support",
+            "Prioritäts-Support (48h)",
             "Verlustvorträge"
           ]
         },
         
-        "premium": {
-          "name": "Premium Report",
-          "description": "Komplettlösung",
-          "features": [
-            "Alles aus Pro",
-            "Mehrjahresberichte",
-            "DeFi Transaktionen",
-            "NFT Tracking",
-            "Staking & Mining",
-            "Steueroptimierung",
-            "Prüfungsunterstützung"
-          ]
-        },
-        
         "enterprise": {
-          "badge": "Für Steuerberater & Kanzleien",
-          "title": "Enterprise Plan",
-          "perYear": "/Jahr",
-          "description": "Unbegrenzte Berichte für alle deine Mandanten. Entwickelt für Steuerprofis mit mehreren Klienten.",
-          "contactSales": "Vertrieb kontaktieren",
-          "features": {
-            "unlimitedReports": {
+          "badge": "FÜR STEUERBERATER & KANZLEIEN",
+          "name": "Enterprise Plan",
+          "price": "1.499",
+          "period": "pro Jahr",
+          "description": "Unbegrenzte Berichte für alle deine Mandanten",
+          "cta": "Vertrieb kontaktieren",
+          "features": [
+            {
               "title": "Unbegrenzte Berichte",
               "description": "Alle Berichtstypen inklusive"
             },
-            "whiteLabel": {
+            {
               "title": "White-Label",
               "description": "Dein Firmen-Branding"
             },
-            "apiAccess": {
+            {
               "title": "API Zugang",
               "description": "Vollständige API-Integration"
             },
-            "bulkProcessing": {
+            {
               "title": "Bulk-Verarbeitung",
               "description": "Mehrere Klienten gleichzeitig"
             },
-            "dedicatedSupport": {
-              "title": "Dedizierter Support",
-              "description": "Persönlicher Account Manager"
-            },
-            "clientManagement": {
+            {
               "title": "Klienten-Verwaltung",
               "description": "Zentralisiertes Dashboard"
+            },
+            {
+              "title": "Dedizierter Support",
+              "description": "Priorisierter E-Mail Support"
             }
-          }
+          ]
         },
         
-        "trust": {
-          "taxCompliant": "Deutsche Steuerkonformität",
-          "bankSecurity": "Bank-Level Verschlüsselung",
-          "moneyBack": "Geld-zurück-Garantie"
+        "cta": {
+          "button": "Jetzt kostenlos starten",
+          "subtext": "Zahle nur, wenn du einen Report benötigst"
         }
+      },
+      
+      "faq": {
+        "title": "Häufig gestellte Fragen",
+        "subtitle": "Alles, was du über Krypto-Steuern wissen musst",
+        "items": [
+          {
+            "question": "Welche Exchanges und Wallets werden unterstützt?",
+            "answer": "Wir unterstützen über 20+ führende Krypto-Börsen, darunter Binance, Coinbase, Kraken, Bitpanda, Bitstamp und viele mehr. Zusätzlich kannst du Wallets wie Ledger, MetaMask und Trust Wallet verbinden. CSV-Import von jeder Plattform möglich."
+          },
+          {
+            "question": "Ist CryptoTax rechtssicher nach deutschem Steuerrecht?",
+            "answer": "Ja, CryptoTax wurde speziell für das deutsche Steuerrecht entwickelt. Wir verwenden die FIFO-Methode (First-In-First-Out) und berücksichtigen die 1-Jahres-Haltefrist für private Veräußerungsgeschäfte gemäß § 23 EStG."
+          },
+          {
+            "question": "Wie funktioniert der Steuerbericht?",
+            "answer": "1) Importiere deine Transaktionen von Exchanges/Wallets, 2) CryptoTax berechnet automatisch Gewinne, Verluste und Haltefristen, 3) Generiere deinen offiziellen PDF-Report für das Finanzamt. Der komplette Prozess dauert nur wenige Minuten."
+          },
+          {
+            "question": "Was passiert mit meinen Daten?",
+            "answer": "Deine Daten sind durch Bank-Level-Verschlüsselung (AES-256) geschützt und werden auf deutschen Servern (DSGVO-konform) gespeichert. Wir verkaufen keine Daten und teilen sie nicht mit Dritten. Du kannst deine Daten jederzeit exportieren oder löschen."
+          },
+          {
+            "question": "Werden DeFi, Staking und NFTs unterstützt?",
+            "answer": "Ja! Der Pro Report unterstützt DeFi-Transaktionen (Uniswap, Aave, etc.), Staking-Rewards, Liquidity Mining, NFT-Käufe/-Verkäufe und Mining. Alle Erträge werden steuerlich korrekt erfasst und im Report dokumentiert."
+          },
+          {
+            "question": "Kann ich den Report meinem Steuerberater geben?",
+            "answer": "Absolut! Der Report ist speziell für Steuerberater formatiert und enthält alle notwendigen Details: Transaktionsliste, Gewinn/Verlust-Rechnung, Haltefristen und steuerliche Bewertung. Viele Steuerberater arbeiten bereits mit CryptoTax. Mit dem Pro Report kannst du den Zugang auch direkt mit deinem Steuerberater teilen."
+          },
+          {
+            "question": "Kann ich Reports für vergangene Jahre erstellen?",
+            "answer": "Ja, du kannst Reports für alle Steuerjahre ab 2022 erstellen. Der Pro Report unterstützt sogar Verlustvorträge über mehrere Steuerjahre hinweg - wichtig für deine steuerliche Optimierung und um Verluste vorzutragen."
+          },
+          {
+            "question": "Ist die Software wirklich kostenlos?",
+            "answer": "Die Software kannst du kostenlos nutzen mit eingeschränkten Features: Transaktionen importieren, Steuerberechnungen ansehen und die Plattform testen. Für den offiziellen, rechtssicheren PDF-Steuerbericht fürs Finanzamt zahlst du einmalig pro Bericht: Basic Report €29 (bis 250 Transaktionen) oder Pro Report €79 (unbegrenzte Transaktionen + erweiterte Features wie DeFi, NFTs, Staking)."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Basic und Pro Report?",
+            "answer": "Basic Report (€29): Bis zu 250 Transaktionen, einfacher Steuerbericht, PDF Export, alle Steuermethoden.\n\nPro Report (€79): Unbegrenzte Transaktionen, DeFi & NFT Support, Staking Rewards, Steuerberater-Sharing, CSV/Excel Export, Verlustvorträge, Prioritäts-Support."
+          },
+          {
+            "question": "Gibt es einen Enterprise Plan für Steuerberater?",
+            "answer": "Ja! Für €1.499/Jahr erhältst du: Unbegrenzte Berichte für alle Mandanten, White-Label Branding, vollständige API-Integration, Bulk-Verarbeitung, zentralisiertes Klienten-Dashboard und dedizierten Support. Kontaktiere unseren Vertrieb für Details."
+          }
+        ]
       }
 }

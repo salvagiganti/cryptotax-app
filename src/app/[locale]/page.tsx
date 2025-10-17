@@ -6,6 +6,7 @@ import CryptoLogo from '@/components/CryptoLogo';
 import { FloatingCoin } from '@/components/FloatingCoin';
 import { FeaturesSection } from '@/components/home/FeaturesSection';
 import { PricingSection } from '@/components/sections/PricingSection';
+import { FAQSection } from '@/components/sections/FAQSection';
 import Navigation from '@/components/Navigation';
 import { useEffect, useState } from 'react';
 
@@ -167,6 +168,9 @@ export default function HomePage() {
       
       {/* Pricing Section */}
       <PricingSection />
+      
+      {/* FAQ Section */}
+      <FAQSection />
       
     </div>
   );
