@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -10,8 +9,8 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-export default function DatenschutzPage() {
-  const t = useTranslations('legal.privacy');
+export default async function DatenschutzPage() {
+  const t = await getTranslations('legal.privacy');
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-24">

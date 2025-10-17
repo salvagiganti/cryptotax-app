@@ -8,6 +8,7 @@ import { FeaturesSection } from '@/components/home/FeaturesSection';
 import { PricingSection } from '@/components/sections/PricingSection';
 import { FAQSection } from '@/components/sections/FAQSection';
 import Navigation from '@/components/Navigation';
+import { Footer } from '@/components/layout/Footer';
 import { useEffect, useState } from 'react';
 
 // 100+ Cryptocurrencies with verified working SVG logos
@@ -171,6 +172,9 @@ export default function HomePage() {
       
       {/* FAQ Section */}
       <FAQSection />
+      
+      {/* Footer */}
+      <Footer />
       
     </div>
   );

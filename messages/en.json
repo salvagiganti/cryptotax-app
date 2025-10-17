@@ -26,7 +26,7 @@
         "bullet2": "Staking, Mining, DeFi, NFT Support",
         "bullet3": "Tax compliant & regulatory approved"
       },
-      
+
       "exchanges": {
         "title": "100+ Exchanges & Wallets",
         "description": "Seamlessly connect over 100 crypto exchanges and wallets - from Binance, Coinbase, Kraken to DeFi protocols like Uniswap and Aave. Automatic CSV import, API integration or manual entry - you decide. Our intelligent duplicate detection ensures every transaction is counted only once.",
@@ -34,7 +34,7 @@
         "bullet2": "DeFi protocols (Uniswap, Aave, etc.)",
         "bullet3": "Intelligent duplicate detection"
       },
-      
+
       "security": {
         "title": "Bank-Level Security",
         "description": "We take data privacy seriously. End-to-end encryption with bank-grade standards (AES-256), zero-knowledge architecture and servers in Germany (GDPR compliant). We don't store API keys, all sensitive data is processed client-side. Regular security audits by independent experts.",
@@ -42,7 +42,7 @@
         "bullet2": "Servers in Germany (GDPR compliant)",
         "bullet3": "TÜV certified & ISO 27001"
       },
-      
+
       "reports": {
         "title": "Tax-Office Ready Reports",
         "description": "Generate tax-recognized reports in seconds in PDF or Excel format. Our reports meet all requirements of tax authorities and include all necessary information: acquisition time, acquisition costs, disposal time, proceeds and profit/loss. Direct export for tax filing.",
@@ -50,7 +50,7 @@
         "bullet2": "All legally required information",
         "bullet3": "Direct export for tax filing"
       },
-      
+
       "realtime": {
         "title": "Real-Time Updates",
         "description": "Synchronize your portfolios in real-time via API connections. New transactions are automatically imported and processed. Live dashboard shows you your current tax status at any time: unrealized gains, holding periods, optimal selling times. Smart alerts warn you of tax-unfavorable trades.",
@@ -58,98 +58,13 @@
         "bullet2": "Unrealized gains & holding periods",
         "bullet3": "Smart alerts for tax optimization"
       },
-      
+
       "multiyear": {
         "title": "Multi-Year & Multi-Currency",
         "description": "Manage unlimited tax years in one tool. Automatic carryover of holdings, correct handling of carry-forward losses. Supports 150+ fiat currencies and automatic conversion at historical exchange rates. Perfect for international traders: multi-jurisdiction support with country-specific tax rules.",
         "bullet1": "Unlimited tax years & carry-forwards",
         "bullet2": "150+ fiat currencies automatically",
         "bullet3": "Multi-country support (DE, AT, CH, US...)"
-      }
-    },
-    
-    "legal": {
-      "impressum": {
-        "title": "Legal Notice",
-        "description": "Legal information about CryptoTax",
-        "company": {
-          "title": "Information according to § 5 TMG",
-          "name": "CryptoTax GmbH",
-          "street": "Sample Street 123",
-          "city": "10115 Berlin",
-          "country": "Germany"
-        },
-        "contact": {
-          "title": "Contact",
-          "email": "Email",
-          "phone": "Phone"
-        },
-        "legal": {
-          "title": "Register Entry",
-          "ceo": "Represented by",
-          "register": "Registration number",
-          "court": "Register court",
-          "vat": "VAT ID"
-        },
-        "disclaimer": {
-          "title": "Disclaimer",
-          "content": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
-        }
-      },
-      "privacy": {
-        "title": "Privacy Policy",
-        "description": "Privacy information for CryptoTax",
-        "intro": {
-          "title": "1. Privacy at a Glance",
-          "content": "The protection of your personal data is very important to us. We process your data exclusively on the basis of legal provisions (GDPR, TKG 2003). In this privacy policy, we inform you about the most important aspects of data processing."
-        },
-        "responsible": {
-          "title": "2. Responsible Party"
-        },
-        "dataCollection": {
-          "title": "3. What Data Do We Collect?",
-          "intro": "We collect the following types of data:",
-          "items": {
-            "personal": "Personal data (name, email, address) during registration",
-            "transactions": "Crypto transaction data for tax calculations",
-            "technical": "Technical data (IP address, browser, device)",
-            "usage": "Usage data (visited pages, clicks)"
-          }
-        },
-        "dataUsage": {
-          "title": "4. How Do We Use Your Data?",
-          "intro": "Your data is used exclusively for the following purposes:",
-          "items": {
-            "service": "Provision of our services",
-            "reports": "Creation of your tax reports",
-            "support": "Customer service and support",
-            "improvement": "Improvement of our services"
-          }
-        },
-        "security": {
-          "title": "5. Data Security",
-          "content": "We use state-of-the-art security measures to protect your data: SSL/TLS encryption, AES-256 encryption, regular security audits, server location in Germany (GDPR compliant), no sharing with third parties without your consent."
-        },
-        "rights": {
-          "title": "6. Your Rights",
-          "items": {
-            "access": "Right to information about your stored data",
-            "correction": "Right to correction of incorrect data",
-            "deletion": "Right to deletion of your data",
-            "restriction": "Right to restriction of processing",
-            "portability": "Right to data portability",
-            "objection": "Right to object to processing"
-          }
-        },
-        "cookies": {
-          "title": "7. Cookies",
-          "content": "Our website uses cookies to improve user experience. You can disable the use of cookies in your browser settings at any time."
-        },
-        "changes": {
-          "title": "8. Changes to this Privacy Policy",
-          "content": "We reserve the right to adapt this privacy policy to reflect changes in the legal situation or changes to our services."
-        },
-        "lastUpdated": "Last updated"
       }
     }
   },
@@ -235,10 +150,10 @@
     "wallets": "Wallets",
     "data": "Data",
     "firstName": "First Name",
-    "lastName": "Last Name",
+    "lastName": "LastName",
     "country": "Country",
     "taxMethod": "Tax Method",
-    "fifo": "FIFO (First In, First Out)",
+    "fifo": "FIFO (First In, First In)",
     "lifo": "LIFO (Last In, First Out)",
     "average": "Average Cost"
   },
@@ -348,50 +263,146 @@
     }
   },
   
-      "faq": {
-        "title": "Frequently Asked Questions",
-        "subtitle": "Everything you need to know about crypto taxes",
-        "items": [
-          {
-            "question": "Which exchanges and wallets are supported?",
-            "answer": "We support over 20+ leading crypto exchanges, including Binance, Coinbase, Kraken, Bitpanda, Bitstamp and many more. Additionally, you can connect wallets like Ledger, MetaMask and Trust Wallet. CSV import from any platform possible."
-          },
-          {
-            "question": "Is CryptoTax compliant with German tax law?",
-            "answer": "Yes, CryptoTax was specifically developed for German tax law. We use the FIFO method (First-In-First-Out) and consider the 1-year holding period for private sales transactions according to § 23 EStG."
-          },
-          {
-            "question": "How does the tax report work?",
-            "answer": "1) Import your transactions from exchanges/wallets, 2) CryptoTax automatically calculates gains, losses and holding periods, 3) Generate your official PDF report for the tax office. The complete process takes just a few minutes."
-          },
-          {
-            "question": "What happens to my data?",
-            "answer": "Your data is protected by bank-level encryption (AES-256) and stored on German servers (GDPR compliant). We don't sell data and don't share it with third parties. You can export or delete your data at any time."
-          },
-          {
-            "question": "Are DeFi, Staking and NFTs supported?",
-            "answer": "Yes! The Pro Report supports DeFi transactions (Uniswap, Aave, etc.), staking rewards, liquidity mining, NFT purchases/sales and mining. All earnings are correctly recorded for tax purposes and documented in the report."
-          },
-          {
-            "question": "Can I give the report to my tax advisor?",
-            "answer": "Absolutely! The report is specially formatted for tax advisors and contains all necessary details: transaction list, profit/loss calculation, holding periods and tax assessment. Many tax advisors already work with CryptoTax. With the Pro Report, you can also share access directly with your tax advisor."
-          },
-          {
-            "question": "Can I create reports for previous years?",
-            "answer": "Yes, you can create reports for all tax years from 2022 onwards. The Pro Report even supports loss carryforwards over multiple tax years - important for your tax optimization and carrying forward losses."
-          },
-          {
-            "question": "Is the software really free?",
-            "answer": "You can use the software for free with limited features: import transactions, view tax calculations and test the platform. For the official, legally secure PDF tax report for the tax office, you pay once per report: Basic Report €29 (up to 250 transactions) or Pro Report €79 (unlimited transactions + advanced features like DeFi, NFTs, Staking)."
-          },
-          {
-            "question": "What's the difference between Basic and Pro Report?",
-            "answer": "Basic Report (€29): Up to 250 transactions, simple tax report, PDF export, all tax methods.\n\nPro Report (€79): Unlimited transactions, DeFi & NFT support, staking rewards, tax advisor sharing, CSV/Excel export, loss carryforwards, priority support."
-          },
-          {
-            "question": "Is there an Enterprise plan for tax advisors?",
-            "answer": "Yes! For €1,499/year you get: Unlimited reports for all clients, white-label branding, full API integration, bulk processing, centralized client dashboard and dedicated support. Contact our sales team for details."
-          }
-        ]
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about crypto taxes",
+    "items": [
+      {
+        "question": "Which exchanges and wallets are supported?",
+        "answer": "We support over 20+ leading crypto exchanges, including Binance, Coinbase, Kraken, Bitpanda, Bitstamp and many more. Additionally, you can connect wallets like Ledger, MetaMask and Trust Wallet. CSV import from any platform possible."
+      },
+      {
+        "question": "Is CryptoTax compliant with German tax law?",
+        "answer": "Yes, CryptoTax was specifically developed for German tax law. We use the FIFO method (First-In-First-Out) and consider the 1-year holding period for private sales transactions according to § 23 EStG."
+      },
+      {
+        "question": "How does the tax report work?",
+        "answer": "1) Import your transactions from exchanges/wallets, 2) CryptoTax automatically calculates gains, losses and holding periods, 3) Generate your official PDF report for the tax office. The complete process takes just a few minutes."
+      },
+      {
+        "question": "What happens to my data?",
+        "answer": "Your data is protected by bank-level encryption (AES-256) and stored on German servers (GDPR compliant). We don't sell data and don't share it with third parties. You can export or delete your data at any time."
+      },
+      {
+        "question": "Are DeFi, Staking and NFTs supported?",
+        "answer": "Yes! The Pro Report supports DeFi transactions (Uniswap, Aave, etc.), staking rewards, liquidity mining, NFT purchases/sales and mining. All earnings are correctly recorded for tax purposes and documented in the report."
+      },
+      {
+        "question": "Can I give the report to my tax advisor?",
+        "answer": "Absolutely! The report is specially formatted for tax advisors and contains all necessary details: transaction list, profit/loss calculation, holding periods and tax assessment. Many tax advisors already work with CryptoTax. With the Pro Report, you can also share access directly with your tax advisor."
+      },
+      {
+        "question": "Can I create reports for previous years?",
+        "answer": "Yes, you can create reports for all tax years from 2022 onwards. The Pro Report even supports loss carryforwards over multiple tax years - important for your tax optimization and carrying forward losses."
+      },
+      {
+        "question": "Is the software really free?",
+        "answer": "You can use the software for free with limited features: import transactions, view tax calculations and test the platform. For the official, legally secure PDF tax report for the tax office, you pay once per report: Basic Report €29 (up to 250 transactions) or Pro Report €79 (unlimited transactions + advanced features like DeFi, NFTs, Staking)."
+      },
+      {
+        "question": "What's the difference between Basic and Pro Report?",
+        "answer": "Basic Report (€29): Up to 250 transactions, simple tax report, PDF export, all tax methods.\n\nPro Report (€79): Unlimited transactions, DeFi & NFT support, staking rewards, tax advisor sharing, CSV/Excel export, loss carryforwards, priority support."
+      },
+      {
+        "question": "Is there an Enterprise plan for tax advisors?",
+        "answer": "Yes! For €1,499/year you get: Unlimited reports for all clients, white-label branding, full API integration, bulk processing, centralized client dashboard and dedicated support. Contact our sales team for details."
       }
+    ]
+  },
+  
+  "legal": {
+    "impressum": {
+      "title": "Legal Notice",
+      "description": "Legal information about CryptoTax",
+      "company": {
+        "title": "Information according to § 5 TMG",
+        "name": "CryptoTax GmbH",
+        "street": "Sample Street 123",
+        "city": "10115 Berlin",
+        "country": "Germany"
+      },
+      "contact": {
+        "title": "Contact",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "legal": {
+        "title": "Register Entry",
+        "ceo": "Represented by",
+        "register": "Registration number",
+        "court": "Register court",
+        "vat": "VAT ID"
+      },
+      "disclaimer": {
+        "title": "Disclaimer",
+        "content": "Despite careful content control, we assume no liability for the content of external links. The operators of the linked pages are solely responsible for their content."
+      }
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "description": "Privacy information for CryptoTax",
+      "intro": {
+        "title": "1. Privacy at a Glance",
+        "content": "The protection of your personal data is very important to us. We process your data exclusively on the basis of legal provisions (GDPR, TKG 2003). In this privacy policy, we inform you about the most important aspects of data processing."
+      },
+      "responsible": {
+        "title": "2. Responsible Party"
+      },
+      "dataCollection": {
+        "title": "3. What Data Do We Collect?",
+        "intro": "We collect the following types of data:",
+        "items": {
+          "personal": "Personal data (name, email, address) during registration",
+          "transactions": "Crypto transaction data for tax calculations",
+          "technical": "Technical data (IP address, browser, device)",
+          "usage": "Usage data (visited pages, clicks)"
+        }
+      },
+      "dataUsage": {
+        "title": "4. How Do We Use Your Data?",
+        "intro": "Your data is used exclusively for the following purposes:",
+        "items": {
+          "service": "Provision of our services",
+          "reports": "Creation of your tax reports",
+          "support": "Customer service and support",
+          "improvement": "Improvement of our services"
+        }
+      },
+      "security": {
+        "title": "5. Data Security",
+        "content": "We use state-of-the-art security measures to protect your data: SSL/TLS encryption, AES-256 encryption, regular security audits, server location in Germany (GDPR compliant), no sharing with third parties without your consent."
+      },
+      "rights": {
+        "title": "6. Your Rights",
+        "items": {
+          "access": "Right to information about your stored data",
+          "correction": "Right to correction of incorrect data",
+          "deletion": "Right to deletion of your data",
+          "restriction": "Right to restriction of processing",
+          "portability": "Right to data portability",
+          "objection": "Right to object to processing"
+        }
+      },
+      "cookies": {
+        "title": "7. Cookies",
+        "content": "Our website uses cookies to improve user experience. You can disable the use of cookies in your browser settings at any time."
+      },
+      "changes": {
+        "title": "8. Changes to this Privacy Policy",
+        "content": "We reserve the right to adapt this privacy policy to reflect changes in the legal situation or changes to our services."
+      },
+      "lastUpdated": "Last updated"
+    },
+    "terms": {
+      "title": "Terms of Service",
+      "description": "Terms and conditions for using CryptoTax"
+    }
+  },
+  
+  "footer": {
+    "legal": "Legal",
+    "impressum": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "terms": "Terms"
+  }
 }
