@@ -18,7 +18,6 @@
     "features": {
       "heading": "Why 10,000+ Traders Trust CryptoTax",
       "subheading": "Professional tax calculation for all crypto traders. Automatic, precise, compliant.",
-      
       "ai": {
         "title": "AI-Powered Automation",
         "description": "No more Excel chaos! Our AI engine automatically analyzes all your crypto transactions and calculates precisely using FIFO, LIFO, or custom methods. Supports all transaction types: trades, staking, mining, airdrops, DeFi, NFTs and more. Fully compliant with tax regulations.",
@@ -26,7 +25,6 @@
         "bullet2": "Staking, Mining, DeFi, NFT Support",
         "bullet3": "Tax compliant & regulatory approved"
       },
-
       "exchanges": {
         "title": "100+ Exchanges & Wallets",
         "description": "Seamlessly connect over 100 crypto exchanges and wallets - from Binance, Coinbase, Kraken to DeFi protocols like Uniswap and Aave. Automatic CSV import, API integration or manual entry - you decide. Our intelligent duplicate detection ensures every transaction is counted only once.",
@@ -34,7 +32,6 @@
         "bullet2": "DeFi protocols (Uniswap, Aave, etc.)",
         "bullet3": "Intelligent duplicate detection"
       },
-
       "security": {
         "title": "Bank-Level Security",
         "description": "We take data privacy seriously. End-to-end encryption with bank-grade standards (AES-256), zero-knowledge architecture and servers in Germany (GDPR compliant). We don't store API keys, all sensitive data is processed client-side. Regular security audits by independent experts.",
@@ -42,7 +39,6 @@
         "bullet2": "Servers in Germany (GDPR compliant)",
         "bullet3": "TÜV certified & ISO 27001"
       },
-
       "reports": {
         "title": "Tax-Office Ready Reports",
         "description": "Generate tax-recognized reports in seconds in PDF or Excel format. Our reports meet all requirements of tax authorities and include all necessary information: acquisition time, acquisition costs, disposal time, proceeds and profit/loss. Direct export for tax filing.",
@@ -50,7 +46,6 @@
         "bullet2": "All legally required information",
         "bullet3": "Direct export for tax filing"
       },
-
       "realtime": {
         "title": "Real-Time Updates",
         "description": "Synchronize your portfolios in real-time via API connections. New transactions are automatically imported and processed. Live dashboard shows you your current tax status at any time: unrealized gains, holding periods, optimal selling times. Smart alerts warn you of tax-unfavorable trades.",
@@ -58,7 +53,6 @@
         "bullet2": "Unrealized gains & holding periods",
         "bullet3": "Smart alerts for tax optimization"
       },
-
       "multiyear": {
         "title": "Multi-Year & Multi-Currency",
         "description": "Manage unlimited tax years in one tool. Automatic carryover of holdings, correct handling of carry-forward losses. Supports 150+ fiat currencies and automatic conversion at historical exchange rates. Perfect for international traders: multi-jurisdiction support with country-specific tax rules.",
@@ -68,7 +62,6 @@
       }
     }
   },
-  
   "common": {
     "welcome": "Welcome to CryptoTax",
     "description": "Automatic calculation and generation of German crypto tax reports",
@@ -158,111 +151,104 @@
     "average": "Average Cost"
   },
   "pricing": {
-    "title": "Official Tax Reports",
-    "subtitle": "Test for free, pay only for the report you need",
-    
-    "free": {
-      "name": "Free",
-      "price": "0",
-      "period": "forever",
-      "description": "Test the software completely free",
+    "title": "Choose the plan that fits your practice",
+    "subtitle": "Start for free and unlock powerful automation when you are ready to scale.",
+    "starter": {
+      "badge": "FREE",
+      "name": "Starter",
+      "description": "Test CryptoTax with a limited number of transactions.",
+      "price": {
+        "monthly": {
+          "value": "0",
+          "label": "Free forever"
+        }
+      },
       "cta": "Start for free",
       "features": [
-        "Software completely free",
-        "Import unlimited transactions",
-        "Use dashboard & charts",
-        "First 10 transactions visible",
-        "Top 3 coins details",
-        "Gross profit/loss visible",
-        "Basic email support"
-      ],
-      "limitations": [
-        "Net tax liability hidden",
-        "No report download",
-        "No DeFi/NFT details"
+        "50 transactions",
+        "1 exchange connection",
+        "Basic report preview",
+        "Community support"
       ]
     },
-    
-    "reportsTitle": "Official Tax Reports",
-    
-    "basic": {
-      "name": "Basic Report",
-      "price": "29",
-      "period": "per report",
-      "description": "Essential tax report",
-      "cta": "Try now",
-      "features": [
-        "Simple tax report",
-        "PDF export",
-        "Up to 250 transactions",
-        "All tax methods (FIFO, LIFO, etc.)",
-        "Complete profit/loss calculation",
-        "Email delivery",
-        "Basic support"
-      ]
-    },
-    
     "pro": {
-      "name": "Pro Report",
-      "price": "79",
-      "period": "per report",
-      "description": "Advanced reporting",
-      "badge": "Most Popular",
-      "cta": "Buy now",
-      "features": [
-        "Everything from Basic",
-        "Unlimited transactions",
-        "DeFi transactions",
-        "Staking & Mining rewards",
-        "NFT tracking",
-        "Tax advisor sharing",
-        "CSV + Excel export",
-        "Priority support (48h)",
-        "Loss carryforwards"
-      ]
-    },
-    
-    "enterprise": {
-      "badge": "FOR TAX ADVISORS & FIRMS",
-      "name": "Enterprise Plan",
-      "price": "1,499",
-      "period": "per year",
-      "description": "Unlimited reports for all your clients",
-      "cta": "Contact sales",
-      "features": [
-        {
-          "title": "Unlimited Reports",
-          "description": "All report types included"
+      "badge": "MOST POPULAR",
+      "name": "Pro",
+      "description": "Advanced tax automation for active investors.",
+      "price": {
+        "monthly": {
+          "value": "24",
+          "label": "per month"
         },
-        {
-          "title": "White-Label",
-          "description": "Your company branding"
-        },
-        {
-          "title": "API Access",
-          "description": "Full API integration"
-        },
-        {
-          "title": "Bulk Processing",
-          "description": "Multiple clients simultaneously"
-        },
-        {
-          "title": "Client Management",
-          "description": "Centralized dashboard"
-        },
-        {
-          "title": "Dedicated Support",
-          "description": "Priority email support"
+        "yearly": {
+          "value": "249",
+          "label": "per year",
+          "note": "Save €39 when billed annually"
         }
+      },
+      "cta": "Upgrade to Pro",
+      "features": [
+        "2,000 transactions",
+        "Unlimited exchange connections",
+        "Full tax report",
+        "Tax optimisation insights",
+        "Priority support",
+        "Export for German tax office"
       ]
     },
-    
+    "business": {
+      "badge": "FOR TAX ADVISORS & FIRMS",
+      "name": "Business",
+      "description": "White-label automation for modern tax practices.",
+      "price": {
+        "monthly": {
+          "value": "149",
+          "label": "per month",
+          "note": "€1,788/year when paid monthly"
+        },
+        "yearly": {
+          "value": "1,499",
+          "label": "per year",
+          "note": "Save €289 = 16% discount"
+        }
+      },
+      "cta": "Book a demo",
+      "features": [
+        "Unlimited transactions",
+        "50 clients included",
+        "API access",
+        "White-label reports",
+        "Dedicated support",
+        "Tax advisor portal",
+        "Priority onboarding"
+      ],
+      "upsell": {
+        "title": "Upsell",
+        "items": [
+          "+ €9.99/month per additional client",
+          "+ €50/year per additional client when billed annually"
+        ]
+      },
+      "example": {
+        "title": "Example: 100 clients",
+        "details": "€1,499/year (50 included) + €2,500/year (50 × €50) = €3,999/year",
+        "highlight": "Only €40 per client!"
+      },
+      "scaling": {
+        "title": "Scales with your firm",
+        "rows": [
+          "50 clients: €1,499/year",
+          "100 clients: €3,999/year",
+          "200 clients: €8,999/year",
+          "500 clients: €24,999/year"
+        ]
+      }
+    },
     "cta": {
-      "button": "Start for free now",
-      "subtext": "Pay only when you need a report"
+      "button": "Talk to our team",
+      "subtext": "We help you find the right setup for your clients."
     }
   },
-  
   "faq": {
     "title": "Frequently Asked Questions",
     "subtitle": "Everything you need to know about crypto taxes",
@@ -309,7 +295,6 @@
       }
     ]
   },
-  
   "legal": {
     "impressum": {
       "title": "Legal Notice",
@@ -398,7 +383,6 @@
       "description": "Terms and conditions for using CryptoTax"
     }
   },
-  
   "footer": {
     "legal": "Legal",
     "impressum": "Legal Notice",
