@@ -1,8 +1,32 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Check, X, Sparkles, Gift } from 'lucide-react';
+import { Check, Sparkles, TrendingUp } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
+
+type PlanKey = 'starter' | 'pro' | 'business';
+
+type PricingPlan = {
+  badge?: string;
+  name: string;
+  description: string;
+  price?: {
+    monthly?: { value?: string; label?: string; note?: string };
+    yearly?: { value?: string; label?: string; note?: string };
+  };
+  cta: string;
+  features?: string[];
+  upsell?: { title?: string; items?: string[] };
+  example?: { title?: string; details?: string; highlight?: string };
+  scaling?: { title?: string; rows?: string[] };
+};
+
+const planConfigs: Array<{ key: PlanKey; highlight?: boolean }> = [
+  { key: 'starter' },
+  { key: 'pro', highlight: true },
+  { key: 'business' },
+];
 
 export function PricingSection() {
   const t = useTranslations('pricing');
@@ -10,220 +34,152 @@ export function PricingSection() {
   return (
     <section id="pricing" className="py-24 bg-gradient-to-b from-white to-purple-50">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            {t('title')}
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            {t('subtitle')}
-          </p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">{t('title')}</h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">{t('subtitle')}</p>
         </div>
 
-        {/* Free Tier Card */}
-        <div className="max-w-4xl mx-auto mb-16">
-          <div className="bg-white rounded-3xl shadow-lg border-2 border-purple-200 p-8 relative overflow-hidden">
-            {/* Gift Icon Badge */}
-            <div className="absolute top-8 right-8">
-              <div className="bg-purple-100 rounded-full p-3">
-                <Gift className="h-8 w-8 text-purple-600" />
-              </div>
-            </div>
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {planConfigs.map(({ key, highlight }) => {
+            const plan = t.raw(key) as PricingPlan;
+            const monthly = plan.price?.monthly;
+            const yearly = plan.price?.yearly;
+            const features = plan.features ?? [];
+            const upsell = plan.upsell;
+            const example = plan.example;
+            const scaling = plan.scaling;
 
-            <div className="max-w-3xl">
-              <h3 className="text-2xl font-bold mb-2">{t('free.name')}</h3>
-              <p className="text-gray-600 mb-6">{t('free.description')}</p>
+            return (
+              <div
+                key={key}
+                className={`relative flex h-full flex-col rounded-3xl p-8 shadow-lg transition-all duration-300 ${
+                  highlight
+                    ? 'border-2 border-purple-500 bg-white/90 backdrop-blur-xl shadow-xl'
+                    : 'border border-slate-200 bg-white'
+                }`}
+              >
+                {plan.badge ? (
+                  <span
+                    className={`inline-flex w-max items-center rounded-full px-4 py-1 text-xs font-semibold uppercase tracking-widest ${
+                      highlight
+                        ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg'
+                        : 'bg-purple-100 text-purple-700'
+                    }`}
+                  >
+                    {plan.badge}
+                  </span>
+                ) : null}
 
-              <div className="flex items-baseline gap-2 mb-8">
-                <span className="text-5xl font-bold text-purple-600">€{t('free.price')}</span>
-                <span className="text-gray-500">{t('free.period')}</span>
-              </div>
+                <h3 className="mt-6 text-2xl font-bold text-gray-900">{plan.name}</h3>
+                <p className="mt-2 text-gray-600">{plan.description}</p>
 
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
-                {/* Inklusive */}
-                <div>
-                  <h4 className="font-semibold text-sm text-gray-500 uppercase tracking-wide mb-4">
-                    Inklusive
-                  </h4>
+                <div className="mt-6 space-y-4">
+                  {monthly ? (
+                    <div>
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-4xl font-bold text-purple-600">€{monthly.value}</span>
+                        {monthly.label ? (
+                          <span className="text-sm text-gray-500">{monthly.label}</span>
+                        ) : null}
+                      </div>
+                      {monthly.note ? (
+                        <p className="text-sm text-gray-500">{monthly.note}</p>
+                      ) : null}
+                    </div>
+                  ) : null}
+
+                  {yearly ? (
+                    <div className="rounded-2xl border border-purple-100 bg-purple-50 p-4">
+                      <div className="flex items-baseline gap-2">
+                        <span className="text-3xl font-semibold text-purple-700">€{yearly.value}</span>
+                        {yearly.label ? (
+                          <span className="text-sm text-purple-700">{yearly.label}</span>
+                        ) : null}
+                      </div>
+                      {yearly.note ? (
+                        <p className="text-sm text-purple-700">{yearly.note}</p>
+                      ) : null}
+                    </div>
+                  ) : null}
+                </div>
+
+                <div className="mt-6 flex-1">
                   <ul className="space-y-3">
-                    {t.raw('free.features').map((feature: string, index: number) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-700">{feature}</span>
+                    {features.map((feature, index) => (
+                      <li key={index} className="flex items-start gap-3 text-sm text-gray-700">
+                        <Check className="mt-0.5 h-5 w-5 flex-shrink-0 text-green-500" />
+                        <span>{feature}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
 
-                {/* Einschränkungen */}
-                <div>
-                  <h4 className="font-semibold text-sm text-gray-500 uppercase tracking-wide mb-4">
-                    Einschränkungen
-                  </h4>
-                  <ul className="space-y-3">
-                    {t.raw('free.limitations').map((limitation: string, index: number) => (
-                      <li key={index} className="flex items-start gap-3">
-                        <X className="h-5 w-5 text-gray-400 flex-shrink-0 mt-0.5" />
-                        <span className="text-gray-600">{limitation}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+                {upsell || example || scaling ? (
+                  <div className="mt-6 space-y-3">
+                    {upsell && upsell.items && upsell.items.length > 0 ? (
+                      <div className="rounded-2xl border border-purple-200 bg-purple-50/80 p-4 text-sm text-purple-800">
+                        <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-purple-600">
+                          <Sparkles className="h-4 w-4" /> {upsell.title}
+                        </p>
+                        <ul className="mt-2 space-y-1">
+                          {upsell.items.map((item, index) => (
+                            <li key={index}>{item}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
 
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="w-full border-2 border-purple-600 text-purple-600 hover:bg-purple-50 font-semibold"
-              >
-                {t('free.cta')}
-              </Button>
-            </div>
-          </div>
-        </div>
+                    {example ? (
+                      <div className="rounded-2xl bg-purple-900/95 p-4 text-sm text-purple-100">
+                        <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-purple-200">
+                          <Sparkles className="h-4 w-4" /> {example.title}
+                        </p>
+                        {example.details ? <p className="mt-2 leading-relaxed">{example.details}</p> : null}
+                        {example.highlight ? (
+                          <p className="mt-2 text-base font-semibold text-white">{example.highlight}</p>
+                        ) : null}
+                      </div>
+                    ) : null}
 
-        {/* Reports Section */}
-        <div className="mb-12">
-          <h3 className="text-3xl font-bold text-center mb-12">
-            {t('reportsTitle')}
-          </h3>
-
-          {/* Basic + Pro Cards */}
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-16">
-            {/* Basic Report */}
-            <div className="bg-white rounded-3xl shadow-lg border border-gray-200 p-8 hover:shadow-xl transition-all">
-              <div className="text-center mb-6">
-                <h4 className="text-2xl font-bold mb-2">{t('basic.name')}</h4>
-                <p className="text-gray-600 text-sm mb-6">{t('basic.description')}</p>
-                
-                <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-5xl font-bold text-purple-600">€{t('basic.price')}</span>
-                </div>
-                <span className="text-gray-500 text-sm">{t('basic.period')}</span>
-              </div>
-
-              <ul className="space-y-3 mb-8">
-                {t.raw('basic.features').map((feature: string, index: number) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <Button 
-                size="lg" 
-                className="w-full bg-purple-600 hover:bg-purple-700 font-semibold"
-              >
-                {t('basic.cta')}
-              </Button>
-            </div>
-
-            {/* Pro Report - Most Popular */}
-            <div className="bg-white rounded-3xl shadow-xl border-2 border-purple-600 p-8 relative hover:shadow-2xl transition-all md:scale-105">
-              {/* Popular Badge */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2">
-                <span className="bg-gradient-to-r from-purple-600 to-pink-600 text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
-                  {t('pro.badge')}
-                </span>
-              </div>
-
-              <div className="text-center mb-6 mt-4">
-                <h4 className="text-2xl font-bold mb-2">{t('pro.name')}</h4>
-                <p className="text-gray-600 text-sm mb-6">{t('pro.description')}</p>
-                
-                <div className="flex items-baseline justify-center gap-2 mb-2">
-                  <span className="text-5xl font-bold text-purple-600">€{t('pro.price')}</span>
-                </div>
-                <span className="text-gray-500 text-sm">{t('pro.period')}</span>
-              </div>
-
-              <ul className="space-y-3 mb-8">
-                {t.raw('pro.features').map((feature: string, index: number) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <Check className="h-5 w-5 text-green-500 flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-gray-700 font-medium">{feature}</span>
-                  </li>
-                ))}
-              </ul>
-
-              <Button 
-                size="lg" 
-                className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 font-semibold"
-              >
-                {t('pro.cta')}
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Enterprise Section */}
-        <div className="max-w-6xl mx-auto">
-          <div className="bg-gradient-to-br from-purple-900 via-purple-800 to-purple-900 rounded-3xl shadow-2xl p-12 text-white relative overflow-hidden">
-            {/* Background Pattern */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 left-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-              <div className="absolute bottom-0 right-0 w-64 h-64 bg-white rounded-full blur-3xl"></div>
-            </div>
-
-            <div className="relative z-10">
-              {/* Badge */}
-              <div className="flex items-center gap-2 mb-4">
-                <Sparkles className="h-5 w-5" />
-                <span className="text-sm font-bold uppercase tracking-wide text-purple-200">
-                  {t('enterprise.badge')}
-                </span>
-              </div>
-
-              {/* Header */}
-              <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10">
-                <div>
-                  <h3 className="text-4xl font-bold mb-3">{t('enterprise.name')}</h3>
-                  <p className="text-xl text-purple-100 max-w-2xl">
-                    {t('enterprise.description')}
-                  </p>
-                </div>
-                <div className="text-left md:text-right">
-                  <div className="text-5xl font-bold mb-1">
-                    €{t('enterprise.price')}
+                    {scaling && scaling.rows && scaling.rows.length > 0 ? (
+                      <div className="rounded-2xl border border-purple-200 bg-white/80 p-4 text-sm text-purple-800">
+                        <p className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-purple-600">
+                          <TrendingUp className="h-4 w-4" /> {scaling.title}
+                        </p>
+                        <ul className="mt-2 space-y-1">
+                          {scaling.rows.map((row, index) => (
+                            <li key={index}>{row}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ) : null}
                   </div>
-                  <div className="text-purple-200">{t('enterprise.period')}</div>
-                </div>
-              </div>
+                ) : null}
 
-              {/* Features Grid */}
-              <div className="grid md:grid-cols-3 gap-6 mb-10">
-                {t.raw('enterprise.features').map((feature: any, index: number) => (
-                  <div key={index} className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
-                    <Check className="h-6 w-6 text-green-400 mb-3" />
-                    <h4 className="font-bold text-lg mb-2">{feature.title}</h4>
-                    <p className="text-sm text-purple-100">{feature.description}</p>
-                  </div>
-                ))}
+                <Button
+                  size="lg"
+                  variant={highlight ? 'default' : 'outline'}
+                  className={`mt-8 w-full font-semibold shadow-md ${
+                    highlight
+                      ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white hover:from-purple-700 hover:to-pink-700'
+                      : 'border-2 border-purple-600 text-purple-600 hover:bg-purple-50'
+                  }`}
+                >
+                  {plan.cta}
+                </Button>
               </div>
-
-              {/* CTA Button */}
-              <Button 
-                size="lg" 
-                className="w-full bg-white text-purple-900 hover:bg-purple-50 font-bold text-lg h-14"
-              >
-                {t('enterprise.cta')}
-              </Button>
-            </div>
-          </div>
+            );
+          })}
         </div>
 
-        {/* Bottom CTA */}
         <div className="text-center mt-16">
-          <Button 
-            size="lg" 
-            className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-lg px-12 h-14 font-bold"
+          <Button
+            size="lg"
+            className="h-14 bg-gradient-to-r from-purple-600 to-pink-600 px-12 text-lg font-bold text-white shadow-lg hover:from-purple-700 hover:to-pink-700"
           >
             {t('cta.button')}
           </Button>
-          <p className="text-gray-600 mt-4 text-lg">
-            {t('cta.subtext')}
-          </p>
+          <p className="mt-4 text-lg text-gray-600">{t('cta.subtext')}</p>
         </div>
       </div>
     </section>
