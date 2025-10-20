@@ -1,10 +1,11 @@
 "use server";
 
 import { createSupabaseServerClient } from "@/lib/supabase/server";
-import { 
-  UserProfile, 
-  TaxSettings, 
-  APIConnection, 
+import {
+  UserProfile,
+  TaxSettings,
+  TaxSettingsSchema,
+  APIConnection,
   WalletConnection,
   ExchangeType,
   Blockchain,
@@ -38,21 +39,36 @@ export async function updateProfile(userId: string, data: { full_name: string })
 
 export async function updateTaxSettings(userId: string, data: TaxSettings): Promise<ActionResult<TaxSettings>> {
   try {
+    const parsed = TaxSettingsSchema.safeParse(data);
+    if (!parsed.success) {
+      const { formErrors, fieldErrors } = parsed.error.flatten();
+      const fieldErrorMessages = Object.values(fieldErrors)
+        .flat()
+        .filter(Boolean) as string[];
+      const message = [...formErrors, ...fieldErrorMessages].join(", ");
+      return {
+        success: false,
+        error: message || "Invalid tax settings",
+      };
+    }
+
     const supabase = createSupabaseServerClient();
-    
-    // For now, we'll store tax settings in a JSON column in profiles
-    // In a real implementation, you might want a separate tax_settings table
-    const { error } = await supabase
+
+    const { data: profile, error } = await supabase
       .from("profiles")
-      .update({ 
-        // Assuming we add a tax_settings JSONB column to profiles
-        // tax_settings: data 
+      .update({
+        tax_settings: parsed.data,
       })
-      .eq("id", userId);
+      .eq("id", userId)
+      .select("tax_settings")
+      .single();
 
     if (error) return { success: false, error: error.message };
-    
-    return { success: true, data };
+
+    return {
+      success: true,
+      data: (profile?.tax_settings as TaxSettings) ?? parsed.data,
+    };
   } catch (e: any) {
     return { success: false, error: e?.message ?? "Unknown error" };
   }

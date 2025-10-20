@@ -1,3 +1,5 @@
+import { z } from "zod";
+
 export enum TaxCalculationMethod {
   FIFO = 'fifo',
   LIFO = 'lifo',
@@ -45,16 +47,29 @@ export interface UserProfile {
   avatar_url?: string;
 }
 
-export interface TaxSettings {
-  tax_residency_country: string;
-  calculation_method: TaxCalculationMethod;
-  tax_year_start: TaxYearStart;
+export const TaxSettingsSchema = z.object({
+  tax_residency_country: z.string().min(1, 'Country is required'),
+  calculation_method: z.nativeEnum(TaxCalculationMethod),
+  tax_year_start: z.nativeEnum(TaxYearStart),
+  include_options: z.object({
+    staking_rewards: z.boolean(),
+    airdrops: z.boolean(),
+    hard_forks: z.boolean(),
+  }),
+});
+
+export type TaxSettings = z.infer<typeof TaxSettingsSchema>;
+
+export const DEFAULT_TAX_SETTINGS: TaxSettings = {
+  tax_residency_country: 'DE',
+  calculation_method: TaxCalculationMethod.FIFO,
+  tax_year_start: TaxYearStart.JANUARY_1,
   include_options: {
-    staking_rewards: boolean;
-    airdrops: boolean;
-    hard_forks: boolean;
-  };
-}
+    staking_rewards: false,
+    airdrops: false,
+    hard_forks: false,
+  },
+};
 
 export interface APIConnection {
   id: string;
