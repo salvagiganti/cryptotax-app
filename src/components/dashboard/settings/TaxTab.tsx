@@ -22,21 +22,19 @@ import {
 } from "@/components/ui/select";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TaxSettings, TaxCalculationMethod, TaxYearStart, COUNTRIES } from "@/types/settings";
+import {
+  TaxSettings,
+  TaxCalculationMethod,
+  TaxYearStart,
+  TaxSettingsSchema,
+  DEFAULT_TAX_SETTINGS,
+  COUNTRIES,
+} from "@/types/settings";
 import { toast } from "sonner";
 
-const taxSchema = z.object({
-  tax_residency_country: z.string().min(1, "Country is required"),
-  calculation_method: z.nativeEnum(TaxCalculationMethod),
-  tax_year_start: z.nativeEnum(TaxYearStart),
-  include_options: z.object({
-    staking_rewards: z.boolean().default(false),
-    airdrops: z.boolean().default(false),
-    hard_forks: z.boolean().default(false),
-  }),
-});
+const taxSchema = TaxSettingsSchema;
 
-type TaxFormValues = z.infer<typeof taxSchema>;
+type TaxFormValues = z.infer<typeof TaxSettingsSchema>;
 
 export interface TaxTabProps {
   taxSettings?: TaxSettings;
@@ -46,18 +44,18 @@ export interface TaxTabProps {
 export function TaxTab({ taxSettings, onUpdateTaxSettings }: TaxTabProps) {
   const [loading, setLoading] = React.useState(false);
 
+  const defaults: TaxFormValues = {
+    ...DEFAULT_TAX_SETTINGS,
+    ...taxSettings,
+    include_options: {
+      ...DEFAULT_TAX_SETTINGS.include_options,
+      ...taxSettings?.include_options,
+    },
+  };
+
   const form = useForm<TaxFormValues>({
     resolver: zodResolver(taxSchema),
-    defaultValues: {
-      tax_residency_country: taxSettings?.tax_residency_country || "DE",
-      calculation_method: taxSettings?.calculation_method || TaxCalculationMethod.FIFO,
-      tax_year_start: taxSettings?.tax_year_start || TaxYearStart.JANUARY_1,
-      include_options: {
-        staking_rewards: taxSettings?.include_options.staking_rewards || false,
-        airdrops: taxSettings?.include_options.airdrops || false,
-        hard_forks: taxSettings?.include_options.hard_forks || false,
-      },
-    },
+    defaultValues: defaults,
   });
 
   const onSubmit = async (values: TaxFormValues) => {
